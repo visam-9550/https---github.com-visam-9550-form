@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <section id="form">
+        <header>
+            <h1 class="form-heading">Form</h1>
+        </header>
+        <form class="form-container" id = "form">
+            <article>
+                <label class="lable-text" for = "firstname">First name</label><br />
+                <input type="text" class="input-box" required id = "firstname" placeholder = "First name"/>
+            </article>
+            <article>
+                <label class="lable-text" for = "lastname">Last name</label><br />
+                <input type="text" class="input-box" required id = "lastname" placeholder = "Last name"/>
+            </article>
+            <article>
+                <label class="lable-text" for = "phonenumber">Phone number</label><br />
+                <input type="number" class="input-box" id ="phonenumber" placeholder = "Phone number" />
+            </article>
+            <article>
+                <label class="lable-text" for = "email">Email</label><br />
+                <input type="email" class="input-box" id = "email" placeholder = "Email" />
+            </article>
+            <article>
+                <label class="lable-text" for = "password">Password</label><br />
+                <input type="password" class="input-box" id = "password" placeholder = "Password"/><br />
+                <p id = "passwordErrMsg" class = "password-err-msg"></p>
+            </article>
+
+
+            <button class ="submit-button" type = "submit">Submit</button>
+        </form>
+    </section>
+
+    <script src ="./index.js"></script>
+</body>
+
+</html>
